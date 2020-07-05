@@ -1,0 +1,64 @@
+*
+{
+	margin:0;
+	padding:0;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #5a9995;
+}
+.loading{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: stretch;
+}
+
+.dot{
+	display: inline-block;
+	width: 80px;
+	height: 40px;
+	border-radius: 200px;
+	background: skyblue;
+	animation-name: scale;
+	animation-duration: 1.2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes scale{
+	0%,25%,75%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(0);
+	}
+}
+
+.d1{
+	animation-delay: 0s;
+	background-color: white;
+}
+
+.d2{
+	animation-delay: .20s;
+	background-color: white;
+}
+
+.d3{
+	animation-delay: .40s;
+	background-color: white;
+}
+
+.d4{
+	animation-delay: .60s;
+	background-color: white;
+}
+
+.d5{
+	animation-delay: .80s;
+	background-color: white;
+}
